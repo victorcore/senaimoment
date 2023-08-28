@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios2</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+    <hr>
+    <h2>Login</h2>
+
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <form action="login.js" method="get">
+
+        <div>
+            <label for="inome"> Nome:</label>
+            <input type="text" id="inome" name="inome" placeholder="primeiro nome" required>
+        </div>
+
+        
+     <div>
+        <label for="imail"> Email: </label>
+        <input type="email" id="imail" name="imail" 
+        placeholder="exemplo@exemplo.com" required>
+     </div>
+
+     <div>
+        <label for="isenha">Senha:</label>
+        <input type="password" id="isenha" name="senha" maxlength="16" minlength="8"
+        placeholder="min 8 max 16" required>
+     </div>
+
+     <div>
+        <label for="inascimento">Data de Nascimento:</label>
+        <input type="date" required id="Nascimento" name="nascimento">
+     </div>
+
+     <div>
+        <label for="icolor">Selecione a cor:</label>
+         <input type="color" id="icolor" name="color" value="#0000">
+     </div>
+
+     <div>
+        <label for="ifile">Anexe a foto:</label>
+        <input type="file" id="ifile" name="file">
+     </div>
+
+     <div>
+        <label for="irange">Range</label>
+        <input type="range" id="irange" name="range"
+        max="5" min="1">
+     </div>
+
+      <input type="submit" value="Cadastrar">
+    </form>
+
+
+    
+</body>
+</html>
